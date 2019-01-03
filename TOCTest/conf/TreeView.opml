@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<opml version="1.1">
+  <head>
+    <title>TOC test</title>
+  </head>
+  <body>
+    <outline title="connection list">
+      <outline title="instrumentNum1" />
+    </outline>
+  </body>
+</opml>
