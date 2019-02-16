@@ -14,13 +14,13 @@ namespace TOCTest.utils
     {
         public static DateTime GetDateTime(string strDateTime)
         {
-            if (strDateTime.Length != 12)
+            if (strDateTime.Length != 17)
             {
                 return DateTime.Now;
             }
             string str = strDateTime;
-            string strInfo = str.Substring(0, 4) + "/" + str.Substring(4, 2) + "/" + str.Substring(6, 2) + " "
-                + str.Substring(8, 2) + ":" + str.Substring(10, 2);
+            string strInfo = str.Substring(1, 4) + "/" + str.Substring(6, 2) + "/" + str.Substring(9, 2) + " "
+                + str.Substring(12, 2) + ":" + str.Substring(15, 2);
             DateTime begin = DateTime.ParseExact(strInfo, "yyyy/MM/dd HH:mm", null);
             return begin;
         }
@@ -255,6 +255,8 @@ namespace TOCTest.utils
                 returnBytes[i] = Convert.ToByte(hexString.Substring(i * 2, 2), 16);
             return returnBytes;
         }
+
+
 
         #endregion
     }
