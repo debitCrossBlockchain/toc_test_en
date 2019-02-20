@@ -256,8 +256,6 @@ namespace TOCTest.utils
             return returnBytes;
         }
 
-
-
         #endregion
     }
 }
